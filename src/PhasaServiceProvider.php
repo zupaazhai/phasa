@@ -20,6 +20,7 @@ class PhasaServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasViews()
             ->hasMigration('create_phasa_table')
-            ->hasCommand(PhasaCommand::class);
+            ->hasCommand(PhasaCommand::class)
+            ->hasRoute('web');
     }
 }
